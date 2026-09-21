@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Степь — вокальный ансамбль</title>
+<meta name="description" content="Вокальный ансамбль «Степь» — молодой московский творческий коллектив.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="index.html" class="active">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="video.html">Выступления</a>
+    <a href="achievements.html">Достижения</a>
+    <a href="announcements.html">Анонсы</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero__bg" data-hero-bg style="background-image:url('images/steppe-field.jpg')"></div>
+  <div class="hero__inner">
+    <div class="logo-slot">
+      <!-- Тестовый логотип — замените images/logo-placeholder.svg (или site.json → logoImage) на финальный логотип -->
+      <img src="images/logo-placeholder.svg" alt="Степь" data-logo-img>
+    </div>
+    <p class="slogan"><span class="wheat-sway">🌾</span> <span data-slogan>Ну поле то оставь, что было</span></p>
+  </div>
+</section>
+
+<div class="photo-band">
+  <img src="images/steppe-field.jpg" alt="Ансамбль «Степь»" data-hero-image>
+  <span class="photo-band__caption">Фото коллектива — заменить в разделе «Главная страница»</span>
+</div>
+
+<section class="section reveal">
+  <h2>О нас</h2>
+  <div class="divider"></div>
+  <p class="lede" data-about-teaser>Загрузка…</p>
+  <a class="link-more" href="about.html">Подробнее →</a>
+</section>
+
+<div class="photo-band">
+  <img src="images/steppe-field.jpg" alt="Выступление ансамбля «Степь»" data-second-image>
+  <span class="photo-band__caption">Фото выступления — заменить в разделе «Главная страница»</span>
+</div>
+
+<section class="section section--alt reveal">
+  <h2>Где мы выступали</h2>
+  <div class="divider"></div>
+  <ul class="venues" data-venues></ul>
+</section>
+
+<section class="cta reveal">
+  <p class="lede">Будем рады сотрудничеству!</p>
+  <a class="btn" href="https://t.me/v_a_steppe" data-cta-btn>Связаться с нами</a>
+  <p class="cta__contact">
+    <a href="https://t.me/v_a_steppe" data-telegram-handle>t.me/v_a_steppe</a>
+  </p>
+</section>
+
+<footer class="site-footer">
+  <div class="divider"></div>
+  Вокальный ансамбль «Степь» · Москва
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+<script>Content.renderHome();</script>
+</body>
+</html>

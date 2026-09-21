@@ -1,0 +1,109 @@
+backend:
+  name: github
+  repo: OWNER/REPO          # ЗАМЕНИТЬ: имя_пользователя/название-репозитория на GitHub
+  branch: main
+  base_url: https://api.netlify.com   # используется только как прослойка для входа, сам сайт остаётся на GitHub Pages
+  auth_endpoint: auth
+
+# Публикация сразу в основную ветку — для маленького сайта ансамбля
+# это самый простой и понятный сценарий (без "черновиков" и модерации).
+publish_mode: simple
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+locale: "ru"
+
+collections:
+
+  - name: "site"
+    label: "Главная страница"
+    files:
+      - file: "content/site.json"
+        label: "Шапка, лого и слоган"
+        name: "site"
+        fields:
+          - { label: "Текст лого (если без картинки)", name: "logoText", widget: "string" }
+          - { label: "Картинка лого (необязательно — заменит текст)", name: "logoImage", widget: "image", required: false }
+          - { label: "Слоган под лого", name: "slogan", widget: "string" }
+          - { label: "Большое фото коллектива (первый баннер)", name: "heroImage", widget: "image" }
+          - { label: "Фото выступления (второй баннер)", name: "secondImage", widget: "image" }
+          - { label: "Текст на кнопке связи", name: "heroCta", widget: "string" }
+          - { label: "Ссылка кнопки связи", name: "heroCtaLink", widget: "string" }
+
+  - name: "about"
+    label: "О нас"
+    files:
+      - file: "content/about.json"
+        label: "Текст «О нас»"
+        name: "about"
+        fields:
+          - { label: "Короткий текст (показывается на главной)", name: "teaser", widget: "text" }
+          - { label: "Полный текст (страница «О нас»)", name: "full", widget: "text" }
+
+  - name: "venues"
+    label: "Где мы выступали"
+    files:
+      - file: "content/venues.json"
+        label: "Список площадок и событий"
+        name: "venues"
+        fields:
+          - name: "items"
+            label: "Пункты списка"
+            widget: "list"
+            fields:
+              - { label: "Текст пункта", name: "text", widget: "string" }
+
+  - name: "achievements"
+    label: "Достижения"
+    files:
+      - file: "content/achievements.json"
+        label: "Достижения"
+        name: "achievements"
+        fields:
+          - { label: "Текст о звании / статусе коллектива", name: "status", widget: "text" }
+          - name: "items"
+            label: "Список достижений"
+            widget: "list"
+            fields:
+              - { label: "Текст достижения", name: "text", widget: "string" }
+
+  - name: "video"
+    label: "Видео"
+    files:
+      - file: "content/video.json"
+        label: "Видео"
+        name: "video"
+        fields:
+          - name: "items"
+            label: "Видео"
+            widget: "list"
+            fields:
+              - { label: "Название", name: "title", widget: "string" }
+              - { label: "Ссылка (YouTube или VK Video)", name: "url", widget: "string" }
+
+  - name: "announcements"
+    label: "Анонсы"
+    files:
+      - file: "content/announcements.json"
+        label: "Анонсы"
+        name: "announcements"
+        fields:
+          - name: "items"
+            label: "Анонсы"
+            widget: "list"
+            fields:
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Дата", name: "date", widget: "string", required: false }
+              - { label: "Описание", name: "text", widget: "text", required: false }
+
+  - name: "contacts"
+    label: "Контакты"
+    files:
+      - file: "content/contacts.json"
+        label: "Контакты"
+        name: "contacts"
+        fields:
+          - { label: "Ссылка ВКонтакте", name: "vk", widget: "string" }
+          - { label: "Ссылка Telegram", name: "telegram", widget: "string" }
+          - { label: "Ссылка MAX", name: "max", widget: "string" }

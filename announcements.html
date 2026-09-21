@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Анонсы — Степь</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="video.html">Выступления</a>
+    <a href="achievements.html">Достижения</a>
+    <a href="announcements.html" class="active">Анонсы</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</header>
+
+<section class="page-hero reveal">
+  <h1>Анонсы</h1>
+  <div class="divider"></div>
+</section>
+
+<div class="announcements" data-announcements></div>
+<div class="empty-state" data-announcements-empty style="display:none">
+  <p class="spark">📣</p>
+  <p>Пока анонсов нет — как только появится дата ближайшего концерта, она будет здесь.</p>
+</div>
+
+<footer class="site-footer">
+  <div class="divider"></div>
+  Вокальный ансамбль «Степь» · Москва
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+<script>Content.renderAnnouncements();</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg width="520" height="180" viewBox="0 0 520 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Степь">
+  <text x="260" y="108" text-anchor="middle" font-family="'Yeseva One', 'PT Serif', serif" font-size="88" fill="#B8862F">СТЕПЬ</text>
+  <g transform="translate(430,40) rotate(18)" stroke="#B8862F" fill="#B8862F">
+    <line x1="0" y1="0" x2="0" y2="80" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="-6" cy="10" rx="9" ry="4" transform="rotate(-35 -6 10)"/>
+    <ellipse cx="6" cy="20" rx="9" ry="4" transform="rotate(35 6 20)"/>
+    <ellipse cx="-6" cy="32" rx="9" ry="4" transform="rotate(-35 -6 32)"/>
+    <ellipse cx="6" cy="42" rx="9" ry="4" transform="rotate(35 6 42)"/>
+    <ellipse cx="-6" cy="54" rx="9" ry="4" transform="rotate(-35 -6 54)"/>
+    <ellipse cx="0" cy="-4" rx="7" ry="10"/>
+  </g>
+</svg>

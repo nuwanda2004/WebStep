@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Выступления — Степь</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="index.html">Главная</a>
+    <a href="about.html">О нас</a>
+    <a href="video.html" class="active">Выступления</a>
+    <a href="achievements.html">Достижения</a>
+    <a href="announcements.html">Анонсы</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</header>
+
+<section class="page-hero reveal">
+  <h1>Выступления</h1>
+  <div class="divider"></div>
+</section>
+
+<div class="video-grid" data-video-grid></div>
+<div class="empty-state" data-video-empty style="display:none">
+  <p class="spark">🎬</p>
+  <p>Видео скоро появятся здесь — добавьте ссылки в разделе «Видео» на панели управления сайтом.</p>
+</div>
+
+<footer class="site-footer">
+  <div class="divider"></div>
+  Вокальный ансамбль «Степь» · Москва
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+<script>Content.renderVideo();</script>
+</body>
+</html>
